@@ -13,6 +13,7 @@ const Navbar = () => {
                 <h2>Gamulisa Ronald</h2>
                 </Link>
             </div>
+            
             <nav className="nav-links">
                 <Link to="/">
                     <FaHome className="fa-home"/>
@@ -28,7 +29,7 @@ const Navbar = () => {
                 </Link>
                 <Link to="/contact" className="contact">
                     <FaSearchLocation className="fa-contact"/>
-                    <span>Contact Me</span>
+                    <span>CContact</span>
                 </Link>
             </nav>
         </div>

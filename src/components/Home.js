@@ -28,7 +28,7 @@ const Home = () => {
                     </p>
                     <h2>This is Gamulisa Ronald</h2>
                     <p className="about">
-                        I'm a Javascript developer but mainly focusing<br></br>
+                        I'm a Full-stack Javascript developer but mainly focusing<br></br>
                         on React as Front-End developer for building interactive<br></br>
                         websites.
                     </p>
