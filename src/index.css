@@ -338,6 +338,7 @@ body {
     .follow-me {
         margin-left: 25px;
     }
+
     .copyright {
         margin-left: 20px;
     }
@@ -503,7 +504,7 @@ body {
         justify-content: space-between;
     }
     .follow-me {
-        margin-left: 25px;
+        margin-left: 2px;
     }
     .copyright {
         margin-left: 20px;
@@ -611,7 +612,11 @@ body {
         margin-left: 25px;
     }
     .copyright {
-        margin-left: 20px;
+        margin-left: 45px;
+    }
+    .follow-details {
+        background-color: black;
+        color: white;
     }
 
     /* Home Contents res */
@@ -853,15 +858,15 @@ p.greet span.g {
     background-color: rgb(234, 236, 238);
     padding: 24px 24px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    color: black;
 }
 
 .footer .copyright, .footer-content {
     padding: 10px 20px;
 }
-
 .copyright {
     position: relative;
 } 
@@ -873,6 +878,19 @@ p.greet span.g {
     position: absolute;
     top: 38.5px;
     left: 0;
+}
+.follow-details {
+    text-align: left;
+}
+.follow-details 
+.instagram,.github,.fb,.twitter {
+    border: none;
+    border-radius: 150px;
+    font-size: 25px;
+    background-color: white;
+    padding: 8px;
+    box-shadow: 0px 2px 4px gray;
+    margin-left: 5px;
 }
 
 
