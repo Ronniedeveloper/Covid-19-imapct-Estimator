@@ -29,7 +29,7 @@ const Navbar = () => {
                 </Link>
                 <Link to="/contact" className="contact">
                     <FaSearchLocation className="fa-contact"/>
-                    <span>CContact</span>
+                    <span>Contact</span>
                 </Link>
             </nav>
         </div>

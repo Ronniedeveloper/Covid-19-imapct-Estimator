@@ -1,4 +1,4 @@
-import { FaCopyright,FaGithub,FaFacebook, FaInstagram,FaTwitter } from 'react-icons/fa';
+import { FaCopyright,FaGithub,FaFacebook, FaInstagram,FaTwitter,FaLinkedin } from 'react-icons/fa';
 const Footer = () => {
     return (
         <div className="footer">
@@ -24,6 +24,9 @@ const Footer = () => {
                     </a>
                     <a href='https://twitter.com/RonnieDev256?t=5Hey-xti7SYiCypHh0G3tg&s=09'>
                         <FaTwitter color='blue' className='twitter'/>
+                    </a>
+                    <a href='https://www.linkedin.com/in/ronnie-developer-7939a1248/'>
+                        <FaLinkedin color='blue' className='twitter'/>
                     </a>
                 </div>
             </div>
