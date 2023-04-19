@@ -183,6 +183,15 @@ body {
     .copyright {
         margin-left: 20px;
     }
+    .latest-work .image {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .latest-work .image img {
+        margin-top: 10px;
+        width: 50%;
+    }
 }
 
 /* Media query or responsiveness of max-width of 600px */
@@ -607,15 +616,19 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        background-color: rgb(0, 0, 0);
+        color: #ffa;
     }
     .follow-me {
         margin-left: 25px;
     }
     .copyright {
-        margin-left: 45px;
+        margin-left: 15px;
+    }
+    .follow-details a {
+        padding: 1px 1px;
     }
     .follow-details {
-        background-color: black;
         color: white;
     }
 
@@ -683,12 +696,12 @@ body {
 .home-content {
     display: flex;
     flex-direction: row;
-    background-image: url('./portifolio.jpg');
+    background-image: url('./images/portifolio.jpg');
     opacity: 100%;
     justify-content: space-between;
     background-attachment: local;
     background-size: contain;
-    background-repeat: inherit;
+    background-repeat: fixed;
     padding: 24px 24px;
 }
 
@@ -965,16 +978,26 @@ p.greet span.g {
     width: 100%;
     margin:  5px 5px 5px 30px;
 }
-
-.latest-work .image {
-    background-image: url('./latestwork.jpg');
-    opacity: 100%;
-    background-attachment: local;
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 124px 124px;
-    width: 15%;
-    border: none;
-    box-shadow: 0 4px 8px black;
-    border-radius: 15px;
+.latest-work .image img {
+    border-radius: 10px;
+    margin-right: 10px;
+    box-shadow: 0 6px 15px #000;
 }
+
+button.source-code {
+    color: #000;
+    outline: none;
+    border: none;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 10px 24px;
+    background-color: #ffa500;
+    margin: 0 0 15px 0;
+}
+
+button.source-code:hover {
+    background-color: rgb(27, 63, 161);
+    color: #ffa;
+}
+  
+
