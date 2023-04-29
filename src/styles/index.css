@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(234, 236, 238);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Navigation style*/
+.title {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 24px;
+}
+.title a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(27, 63, 161);
+}
+.title h3 {
+    background-color: indigo;
+    color: aqua;
+    padding: 12px 12px;
+    margin-right: 5px;
+    margin-top: 14px;
+    border: none;
+    border-radius: 30px;
+}
+
+.nav-bar {
+    color: #000000;
+    display: flex;
+    background-color: rgb(234, 236, 238);
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.nav-links {
+    padding:  36px 20px 0 2px;
+}
+
+.nav-links a {
+    position: relative;
+    text-decoration: none;
+    padding: 12px 10px;
+    font-size: 17px;
+    border-right: none;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+}
+
+.nav-links a.contact {
+    margin-left: 20px;
+    padding: 9px 20px;
+    background-color: #ffa500;
+    border: none;
+    border-radius: 25px;
+}
+
+.nav-links .contact:hover {
+    background-color: rgb(27, 63, 161);
+    color: white;
+}
+
+.nav-links .contact:hover .fa-contact {
+    color: #ffff;
+}
+
+.nav-links a span {
+    padding-left: 10px;
+}
+
+.fa-home, .fa-about {
+    position: absolute;
+    color: rgb(158, 10, 226);
+    top: 13px;
+    left: 0;
+    padding-right: 18px;
+}
+.fa-about:hover {
+    color: rgb(0, 110, 255);
+}
+.fa-service:hover {
+    color: rgb(0, 110, 255);
+}
+.fa-home:hover {
+    color: rgb(0, 110, 255);
+}
+.fa-service {
+    position: absolute;
+    color: rgb(158, 10, 226);
+    top: 13px;
+    left: 0;
+}
+.fa-service:hover {
+    color: rgb(0, 110, 255);
+}
+.fa-contact {
+    position: absolute;
+    color: black;
+    top: 10px;
+    left: 8px;
+}
+.fa-contact:hover {
+    color: #ffff;
+}
+
+
+/* Home Contents style*/
+.home-content {
+    display: flex;
+    flex-direction: row;
+    background-image: url('../images/portifolio.jpg');
+    opacity: 100%;
+    justify-content: space-between;
+    background-attachment: local;
+    background-size: contain;
+    background-repeat: fixed;
+    padding: 24px 24px;
+}
+
+.about-me-content {
+    padding: 24px 0;
+}
+
+p.greet {
+    margin-bottom: 15px;
+    font-weight: 900px;
+}
+
+p.greet span {
+    background-color: orange;
+    border: none;
+    padding: 8px 6px;
+    margin-left: 2px;
+    border-radius: 5px;
+}
+
+p.greet span.g {
+    margin-left: 10px;
+}
+
+.about-me-content .about {
+    font-size: 18px;
+}
+
+.about-me-content button {
+    position: relative;
+    border: none;
+    outline: none;
+    background-color: #ffa500;
+    border-radius: 25px;
+    padding: 12px 45px 12px 24px;
+    z-index: 999999;
+    cursor: pointer;
+}
+.about-me-content button:hover {
+    background-color: rgb(27, 63, 161);
+    color: white;
+}
+
+.about-me-content button .fa-handshake {
+    position: absolute;
+    font-size: 25px;
+    top: 7px;
+    right: 12px;
+}
+
+/* Statistics style*/
+.statistics {
+    padding: 24px 24px;
+}
+
+.projects, .clients, .awards {
+    margin-bottom: 17px;
+    padding: 6px 12px;
+    color: white;
+    box-shadow: 0 4px 8px black;
+    background-color: rgb(0, 110, 255);
+    border: none;
+    border-radius: 10px;
+    text-align: right;
+}
+
+.projects h1, .projects p {
+    margin: 2px 0;
+    padding: 2px 0;
+}
+
+.clients h1, .clients p {
+    margin: 2px 0;
+    padding: 2px 0;
+}
+
+.awards h1, .awards p {
+    margin: 2px 0;
+    padding: 2px 0;
+}
+
+/* Services Offered style*/
+.service {
+    padding: 34px 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(0, 110, 255);
+    color: white;
+}
+
+.service-text {
+    padding: 24px 24px;
+}
+
+.service-text h1 {
+    border-left: 5px solid white;
+    padding-left: 15px;
+}
+
+.service-text p {
+    font-size: 18px;
+}
+
+.service-content {
+    padding: 2px 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.column-1, .column-2 {
+    position: relative;
+}
+
+.icon-web {
+    position: absolute;
+    background-color: white;
+    padding: 18px 18px;
+    border: none;
+    border-radius: 50px;
+    top: -4px;
+    left: 0;
+}
+
+.icon-ux {
+    position: absolute;
+    background-color: white;
+    padding: 18px 18px;
+    border: none;
+    border-radius: 50px;
+    top: 118px;
+    left: 0;
+}
+.icon-mockup {
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding: 18px 18px;
+    border: none;
+    border-radius: 50px;
+    top: 1px;
+    left: 0;    
+}
+
+.icon-teacher {
+    position: absolute;
+    background-color: white;
+    padding: 18px 18px;
+    border: none;
+    border-radius: 50px;
+    top: 118px;
+    left: 0; 
+}
+
+.website, .ux, .mockup, .teacher {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    margin: 25px;
+    box-shadow: 0 4px 8px black;
+    border: none;
+    border-radius: 15px;
+}
+
+/* Footer style*/
+.footer {
+    background-color: rgb(234, 236, 238);
+    padding: 24px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    color: black;
+}
+
+.footer .copyright, .footer-content {
+    padding: 10px 20px;
+}
+.copyright {
+    position: relative;
+} 
+.copyright h1 {
+    margin-left: 25px;
+}
+.copyright .fa-copyright {
+    font-size: 35px;
+    position: absolute;
+    top: 37px;
+    left: 4px;
+}
+.follow-details {
+    text-align: left;
+}
+.follow-details 
+.instagram,.github,.fb,.twitter {
+    border: none;
+    border-radius: 150px;
+    font-size: 25px;
+    background-color: white;
+    padding: 8px;
+    box-shadow: 0px 2px 4px gray;
+    margin-left: 5px;
+}
+
+
+
+/* Contact us style*/
+.contact-us {
+    display: flex;
+    justify-content: left;
+    padding: 24px 24px;
+}
+
+.contact-text {
+    padding: 2px 12px;
+}
+
+
+.contact-text h1 {
+    padding-left: 15px;
+}
+
+.contact-text p {
+    font-size: 18px;
+}
+
+/* About us style*/
+.about-us {
+    padding: 24px 24px;
+    text-align: left;
+}
+
+.about-us h1 {
+    padding: 5px 15px;
+    width: 40%;
+}
+
+.about-content {
+    padding: 8px 12px;
+}
+
+.about-content p {
+    font-size: 18px;
+}
+
+/* Not found style*/
+.not-found {
+    max-width: 400px;
+    padding: 12px 12px;
+}
+  
+.not-found h1 {
+    color: red;
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+  
+.not-found p {
+    font-size: 30px;
+}
+
+.not-found a {
+    text-decoration: none;
+}
+
+/* My Latest work style*/
+.latest-work {
+    width: 100%;
+    margin:  5px 5px 5px 30px;
+}
+.latest-work .image img {
+    border-radius: 10px;
+    margin-right: 10px;
+    box-shadow: 0 6px 15px #000;
+}
+
+button.source-code {
+    color: #000;
+    outline: none;
+    border: none;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 10px 24px;
+    background-color: #ffa500;
+    margin: 0 0 15px 0;
+}
+
+button.source-code:hover {
+    background-color: rgb(27, 63, 161);
+    color: #ffa;
+}
+  
+

@@ -13,7 +13,7 @@ const Footer = () => {
                 <p>Product of 2022</p>
             </div>
             <div className='follow-me'>
-                <h1>Follow me</h1>
+                <h1>Follow the developer</h1>
                 <div className='follow-details'>      
                     <Link to='https://github.com/Ronniedeveloper'>
                         <FaGithub color='indigo'className='github'/>

@@ -2,7 +2,7 @@ const AboutUs = () => {
     return (
         <div className="about-us">
             <div className="about-content">
-                <h1>About Me</h1>
+                <h1>About me</h1>
                 <p>  
                     I'm a Full-stack Javascript developer but mainly focusing<br></br>
                     on React as Front-End developer for building interactive<br></br>
