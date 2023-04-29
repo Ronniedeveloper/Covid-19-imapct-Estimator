@@ -41,6 +41,7 @@
     /* Service res */
     .service {
         width: 100%;
+        display: block;
         padding: 34px 24px;
         display: flex;
         flex-direction: row;
@@ -60,9 +61,12 @@
     }
     
     .service-content {
-        padding: 2px 2px;
+        width: 100%;
+        display: block;
+        padding: 2px 12px;
         display: flex;
         flex-direction: row;
+        gap: 4;
         flex-wrap: wrap;
     }
     .column-1, .column-2 {
@@ -148,6 +152,11 @@
     .awards h1, .awards p {
         margin: 2px 0;
         padding: 2px 0;
+    }
+
+    /* About  */
+    .about-us .about-content h1 {
+        font-size: 1.6em;
     }
 
     /* Footer res */
