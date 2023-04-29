@@ -1,13 +1,19 @@
 /* Media Query of max-width: 325px */
 @media screen and (max-width: 325px) {
     /* Navigation */
+    body {
+        width: 100%;
+        display: block;
+    }
     .title {
+        width: 100%;
         flex-direction: row;
         padding: 2px 2px 0 18px;
     }
     .nav-bar {
         flex-direction: column;
         justify-content: center;
+        width: 100%;
         margin: 0;
         padding: 0 0 25px 0;
     }
@@ -33,12 +39,12 @@
 
     /* Service res */
     .service {
-        max-width: 600px;
         background-color: black;
-        width: 0%;
+        width: 100%;
         padding: 4px 24px;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
     
@@ -94,6 +100,9 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        width: 100%;
+        display: block;
+        margin-top: 2em;
         background-color: rgb(0, 0, 0);
         color: #ffa;
     }
@@ -113,10 +122,12 @@
     /* Home Contents res */
     .home-content {
         width: 100%;
+        display: block;
         padding: 12px 15px;
     }
 
     .about-me-content {
+        width: 50%;
         padding: 15px 0;
         font-size: 13px;
     }
@@ -136,11 +147,12 @@
     }
 
     .about-me-content .about {
-        font-size: 131em;
+        font-size: 1em;
     }
 
     /* Statistics res */
     .statistics {
+        width: 50%;
         padding: 12px 15px;
         margin-left: 25px;
     }
