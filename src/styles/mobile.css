@@ -110,8 +110,19 @@
         margin-left: 10px;
     }
 
+    /* About us */
+
+    .about-content {
+        margin-top: 50px;
+    }
+
     .about-me-content .about {
         font-size: 1em;
+    }
+
+    /* Contact Us */
+    .contact-text {
+        margin-top: 50px;
     }
 
     /* Statistics res*/
@@ -140,6 +151,11 @@
     .awards h1, .awards p {
         margin: 2px 0;
         padding: 2px 0;
+    }
+
+    /* About */
+    .about-us .about-content h1 {
+        font-size: 1.6em;
     }
 
     /* Footer res */

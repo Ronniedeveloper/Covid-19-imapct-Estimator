@@ -4,13 +4,16 @@ import { FaHome,
          FaUserNinja, 
          FaSearchLocation
         } from "react-icons/fa"
+import { Zoom } from "react-reveal";
 const Navbar = () => {
     return (
         <div className="nav-bar">
             <div className="title">
                 <Link to="/">
                 <h3>GR</h3>
-                <h2>Gamulisa Ronald</h2>
+                <Zoom>
+                    <h2>Gamulisa Ronald</h2>
+                </Zoom>
                 </Link>
             </div>
             

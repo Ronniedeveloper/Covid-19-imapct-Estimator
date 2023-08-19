@@ -2,6 +2,7 @@ import { useHistory } from 'react-router-dom';
 import Service from "./Service";
 import { FaHandshake } from 'react-icons/fa';
 import LatestWork from './LatestWork';
+import { Flip} from 'react-reveal'
 
 
 const Home = () => {
@@ -37,20 +38,26 @@ const Home = () => {
                     </button>
                 </div>
                 <div className="statistics">
-                    <div className="projects">
-                        <h1>10+</h1>
-                        <p>Projects Completed</p>
-                    </div>
-                    <div className="clients">
-                        <h1>10+</h1>
-                        <p>Happy Clients</p>
-                    </div>
-                    <div className="awards">
-                        <h1>10+</h1>
-                        <p>Awards Archived</p>
-                    </div>
+                    <Flip>
+                        <div className="projects">
+                            <h1>10+</h1>
+                            <p>Projects Completed</p>
+                        </div>
+                    </Flip>
+                    <Flip>
+                        <div className="clients">
+                            <h1>10+</h1>
+                            <p>Happy Clients</p>
+                        </div>
+                    </Flip>
+                    <Flip>
+                        <div className="awards">
+                            <h1>10+</h1>
+                            <p>Awards Archived</p>
+                        </div>
+                    </Flip>
                 </div>
-        </div>
+            </div>
         <Service />
         <LatestWork />
         </div>

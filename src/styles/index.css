@@ -66,7 +66,7 @@ body {
 }
 
 .nav-links .contact:hover {
-    background-color: rgb(27, 63, 161);
+    background-color: rgb(255, 196, 35);
     color: white;
 }
 
@@ -172,6 +172,7 @@ p.greet span.g {
     font-size: 25px;
     top: 7px;
     right: 12px;
+    z-index: -9999;
 }
 
 /* Statistics style*/

@@ -179,6 +179,10 @@
         margin: 2px 0;
         padding: 2px 0;
     }
+        /* About  */
+        .about-us .about-content h1 {
+            font-size: 1.2em;
+        }
 }
 
 

@@ -1,4 +1,5 @@
 import {  FaGlobe, FaUikit, FaMobileAlt, FaChalkboardTeacher, FaRegArrowAltCircleRight } from 'react-icons/fa';
+
 const Service = () => {
     return (
         <div className="service">
