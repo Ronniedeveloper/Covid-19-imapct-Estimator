@@ -1,181 +1,150 @@
 /* Media query or responsiveness of max-width of 395px */
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 380px) {
+    /* Body Res */
+    body p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
     /* Navigation res */
-    .title {
-        flex-direction: row;
-        padding: 2px 2px 0 18px;
-    }
-    .nav-bar {
-        flex-direction: column;
-        justify-content: center;
-        margin: 0;
-        padding: 0 0 25px 0;
-    }
-    .nav-links {
+    .dvs_header {
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
-        padding: 1px 12px 0 20px;
+        z-index: 999999;
+        color: #eee;
+        background-color: rgb(79, 127, 93);
     }
-    
-    .nav-links a {
-        padding: 12px 5px;
-        font-size: 14px;
+    .dvs_header_menuItems {
+        display: none;
+        border-top: none;
+        color: #eee;
     }
-    .nav-links .contact {
-        margin-left: 2px;
-    }
-    .nav-links a span {
-        margin-left: 4px;
-    }
-    .nav-links a.contact {
-        margin-left: 24px;
-        padding: 9px 10px;
-        background-color: orange;
-        border: none;
-        border-radius: 150px;
-    }
-    .contact-us {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    /* Service res */
-    .service {
-        width: 100%;
+    .dvs_header_menuItems.is-open {
         display: block;
-        padding: 34px 24px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
     }
-    
-    .service-text {
-        padding: 15px 24px;
-    }
-    
-    .service-text h1 {
-        padding-left: 15px;
-    }
-    
-    .service-text p {
-        font-size: 1px;
-    }
-    
-    .service-content {
-        width: 100%;
+    .dvs_header a {
         display: block;
-        padding: 2px 12px;
-        display: flex;
-        flex-direction: row;
-        gap: 4;
+        width: 100%;
+    }
+    .nav_wrapper li a {
+        color: #c8c0c0;
+        font-family: 'Lucida Sans', 
+        'Lucida Sans Regular', 
+        'Lucida Grande', 
+        'Lucida Sans Unicode', 
+        Geneva, Verdana, sans-serif;
+    }
+    .nav_links a:hover {
+        color: #ffa500;
+        transition: 0.5ms ease-in-out;
+    }
+    .nav_wrapper li h4 {
+        color: #ffa500;
+        font-family: 'Lucida Sans', 
+        'Lucida Sans Regular', 
+        'Lucida Grande', 
+        'Lucida Sans Unicode', 
+        Geneva, Verdana, sans-serif;
+    }
+    .dvs_header_trigger {
+        display: block;
+        padding-right: 14px;
+    }
+    .dvs_header .fa-bars {
+        color: #eee;
+    }
+    .nav_wrapper {
         flex-wrap: wrap;
     }
-    .column-1, .column-2 {
-        position: relative;
-    }
-    .website, .ux, .mockup, .teacher {
-        padding: 5px 10px;
-        margin: 25px;
-    }
-    .icon-web {
-        padding: 18px 18px;
-        top: -4px;
-        left: 0;
-    }
-    .icon-ux {
-        padding: 18px 18px;
-        top: 1px;
-        left: 0;
-    }
-    .icon-mockup {
-        padding: 18px 18px;
-        top: 1px;
-        left: 0;    
-    }
-    .icon-teacher {
-        padding: 18px 18px;
-        top: 118px;
-        left: 0; 
-    }
-
-    /* Home Contents res*/
-    .home-content {
-        width: 100%;
-        padding: 12px 15px;
-    }
-
-    .about-me-content {
-        padding: 15px 0;
-        font-size: 13px;
-    }
-
-    p.greet {
-        font-size: 8px;
-    }
-
-    p.greet span {
-        padding: 1px 3px;
-        margin-left: 2px;
-        border-radius: 5px;
-    }
-
-    p.greet span.g {
-        margin-left: 10px;
-    }
-
-    .about-me-content .about {
-        font-size: 1em;
-    }
-
-    /* Statistics res*/
-    .statistics {
-        padding: 12px 15px;
-    }
-
-    .projects, .clients, .awards {
-        margin-bottom: 17px;
-        padding: 1px 15px;
-        border-radius: 1px;
-        text-align: left;
-        font-size: 11px;
-    }
-
-    .projects h1, .projects p {
-        margin: 2px 0;
-        padding: 2px 0;
-    }
-
-    .clients h1, .clients p {
-        margin: 2px 0;
-        padding: 2px 0;
-    }
-
-    .awards h1, .awards p {
-        margin: 2px 0;
-        padding: 2px 0;
-    }
-
-    /* About  */
-    .about-us .about-content h1 {
-        font-size: 1.6em;
-    }
-
-    /* Footer res */
-    .footer {
+    .nav_links {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        justify-content: left;
+        flex-wrap: wrap;
     }
-    .follow-me {
-        margin-left: 2px;
-    }
-    .copyright h1 {
-        margin-left: 25px;
-    }
-    .copyright .fa-copyright {
-        font-size: 35px;
-        position: absolute;
-        top: 38.5px;
-        left: 0;
-    }
-}
 
+    /* Welcome Res */
+    .welcome {
+        width: 100%;
+        margin-top: 125px;
+    }
+    .welcome h1 {
+        border: 2px solid #ffa500;
+        color: #ffa500;
+        padding: 18px;
+        font-weight: 900px;
+        font-family: 'Lucida Sans', 
+        'Lucida Sans Regular', 
+        'Lucida Grande', 
+        'Lucida Sans Unicode', 
+        Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+    .welcome p {
+        text-align: center;
+        padding: 8px;
+    }
+    .welcome span {
+        display: inline-block;
+        background-color: #ffa500;
+        padding: 8px;
+        border-radius: 20px 0px 20px 0px;
+    }
+
+    /* Frp Res */
+    .apk-container {
+        border-top: 1px solid #c8c0c0;
+        width: 100%;
+        padding: 8px;
+        border-bottom: 1px solid #c8c0c0;
+    }
+    .apk-links {
+        display: grid;
+    }
+    .apk-content h1 {
+        color: #69a46d;
+        text-align: center;
+    } 
+    .apk-content h1 {
+        font-family: 'Lucida Sans', 
+        'Lucida Sans Regular', 
+        'Lucida Grande', 
+        'Lucida Sans Unicode', 
+        Geneva, Verdana, sans-serif;
+    }
+    .apk-content p {
+        padding: 8px;
+        text-align: center;
+    }
+    .apk-links a {
+        display: block;
+        text-decoration: none;
+        color: #ffffff;
+        padding: 8px;
+        margin: 6px;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifs;
+        background-color: #69a46d;
+        border: none;
+        border-radius: 80px 0 80px 0px;
+    }
+    .title h3 {
+        padding-left: 12px;
+        border-left: 4px solid #69a46d;
+        color: #ffa500;
+        font-family: 'Lucida Sans', 
+        'Lucida Sans Regular', 
+        'Lucida Grande', 
+        'Lucida Sans Unicode', 
+        Geneva, Verdana, sans-serif;
+    }
+    .apk-links a:hover {
+        background-color: #315634;
+        transition: 1s ease-in-out;
+    }
+
+    /* Footer Res */
+    .footer-container {
+        width: 100%;
+    }
+    
+}

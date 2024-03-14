@@ -1,42 +1,33 @@
 import { Link } from "react-router-dom";
-import { FaHome,
-         FaLaptopCode, 
-         FaUserNinja, 
-         FaSearchLocation
-        } from "react-icons/fa"
 import { Zoom } from "react-reveal";
-const Navbar = () => {
-    return (
-        <div className="nav-bar">
-            <div className="title">
-                <Link to="/">
-                <h3>GR</h3>
-                <Zoom>
-                    <h2>Gamulisa Ronald</h2>
-                </Zoom>
-                </Link>
-            </div>
-            
-            <nav className="nav-links">
-                <Link to="/">
-                    <FaHome className="fa-home"/>
-                    <span>Home</span>
-                </Link>
-                <Link to="/service">
-                    <FaLaptopCode className="fa-service"/>
-                    <span>Service</span>
-                </Link>
-                <Link to="/about">
-                    <FaUserNinja className="fa-about"/>
-                    <span>About Me</span>
-                </Link>
-                <Link to="/contact" className="contact">
-                    <FaSearchLocation className="fa-contact"/>
-                    <span>Contact</span>
-                </Link>
-            </nav>
-        </div>
-    );
+import { useState } from "react";
+import {FaBars} from "react-icons/fa"
+const NavBar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const toggleMenu = () => {
+        setIsOpen((open) => !open);
+    };
+    return(
+        <nav className="dvs_header">
+            <ul className="nav_wrapper d-flex wrap justify-between align-center">
+                <li>
+                    <h4>RONNIE TECH</h4>
+                </li>
+                <li className="dvs_header_trigger" onClick={toggleMenu}>
+                    <FaBars className="fa-bars"/>
+                </li>
+                <li className={`dvs_header_menuItems ${isOpen ? "is-open" : ""}`}>
+                    <ul>
+                        <li className="nav_links d-flex justify-center wrap">
+                            <a href="#">Home</a>
+                            <a href="#">Service</a>
+                            <a href="#">About</a>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    )
 }
- 
-export default Navbar;
+export default NavBar;

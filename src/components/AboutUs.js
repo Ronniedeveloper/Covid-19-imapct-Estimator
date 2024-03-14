@@ -1,5 +1,3 @@
-import { Zoom } from "react-reveal";
-
 const AboutUs = () => {
     return (
         <div className="about-us">
