@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-import { Zoom } from "react-reveal";
 import { useState } from "react";
 import {FaBars} from "react-icons/fa"
 const NavBar = () => {
