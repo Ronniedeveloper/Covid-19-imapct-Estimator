@@ -1,4 +1,4 @@
-// import Footer from './Footer.';
+import Footer from './Footer.';
 import FrpApk from './FrpApk';
 import Welcome from './Welcome';
 
@@ -7,7 +7,7 @@ const Home = () => {
         <div className='main-container'>
             <Welcome />
             <FrpApk />
-            {/* <Footer /> */}
+            <Footer />
         </div>
     );
 }
