@@ -1,5 +1,5 @@
 /* Media query or responsiveness of max-width of 395px */
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 480px) {
     /* Body Res */
     body p {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
