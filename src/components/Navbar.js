@@ -17,10 +17,9 @@ const NavBar = () => {
                 <li className={`dvs_header_menuItems ${isOpen ? "is-open" : ""}`}>
                     <ul>
                         <li className="nav_links d-flex justify-center wrap">
-                            <a href="#">Home</a>
-                            <a href="#">Service</a>
-                            <a href="#">About</a>
-                            <a href="#">Contact</a>
+                            <a href="/">Home</a>
+                            <a href="/about">About</a>
+                            <a href="/contact">Contact</a>
                         </li>
                     </ul>
                 </li>
